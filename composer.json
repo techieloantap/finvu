@@ -1,0 +1,36 @@
+{
+    "name": "loantap/finvu",
+    "license": "GPL-3.0-or-later",
+    "type": "awesome-handler",
+    "description": "A package to use finvu api for AA consent and for fetching data",
+	"keywords": ["WordPress", "Low Code"," Awesome Enterprise","Shortcode","finvu"],
+	"homepage": "https://getawesomestudio.com/",
+	"authors": [
+		{
+            "name": "Loantap",
+            "homepage": "https://loantap.in/"
+        }
+       
+    ],
+	 "support": {
+        "docs": "https://awxdocs.com/tutorials/"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "ramsey/uuid": "^4.2"
+    },
+	 "extra": { 
+		"installer-name": "finvu"
+    },
+    "config": {
+		"process-timeout": 600,
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "oomphinc/composer-installers-extender": true
+        }
+    },
+	"prefer-stable": true
+}
