@@ -181,7 +181,7 @@ function raise_consent_request($atts,$content=null,$shortcode=null){
 
         $data['finvuTalker'] = new Talker($config['talker']); 
 
-        $data['result_token'] = $finvuTalker->getAccessToken($config['user_name'], $config['password']);
+        $data['result_token'] = $data['finvuTalker']->getAccessToken($config['user_name'], $config['password']);
 
         return $data;
     }
